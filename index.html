@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Спутник — табачный магазин</title>
+  <meta name="description" content="Специализированный табачный магазин." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="header">
+      <!-- Замените на свой логотип: <img src="logo.png" alt="Спутник" class="avatar"> -->
+      <img src="logo.png" alt="Спутник" class="avatar">
+      <p class="subtitle">Специализированный табачный магазин · 23 адреса</p>
+    </header>
+
+    <!-- ===== ШИРОКИЙ СЛАЙДЕР МАГАЗИНОВ ===== -->
+    <div class="store-slider" id="storeSlider">
+      <div class="slider-track" id="sliderTrack"></div>
+
+      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-counter" id="sliderCounter">1 / 23</div>
+      <button class="slider-arrow prev" type="button" aria-label="Предыдущий магазин">‹</button>
+      <button class="slider-arrow next" type="button" aria-label="Следующий магазин">›</button>
+    </div>
+
+    <!-- Все адреса на карте -->
+    <a class="link-btn primary"
+       href="https://yandex.ru/maps/?text=табачный+магазин+Спутник"
+       target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6.1 12.4 6.4 12.7.3.4.9.4 1.2 0 .3-.3 6.4-7.5 6.4-12.7 0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>
+      </span>
+      <span class="label">Все адреса на карте<small>Открыть список магазинов в Яндекс.Картах</small></span>
+      <span class="arrow">→</span>
+    </a>
+
+    <!-- Соцсети -->
+    <section class="section">
+      <div class="section-title">Мы в соцсетях</div>
+
+      <a class="link-btn" href="https://web.telegram.org/k/#@sputnik_manager" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3c.2-.9-.7-1.6-1.5-1.2L2.7 10.6c-.9.4-.9 1.6.1 1.9l4.6 1.4 1.7 5.6c.3.9 1.4 1.1 2 .4l2.5-2.5 4.4 3.3c.8.6 1.9.2 2.1-.8l2.8-15.6zM9.5 14.1l8.4-6.2c.3-.2.6.1.3.4l-6.8 6.5-.3 3.1-1.6-3.8z"/></svg>
+        </span>
+        <span class="label">Telegram<small>Новости и ассортимент</small></span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://vk.me/sputnik_vape" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.8 17.9c-5.5 0-8.9-3.9-9-10.1h2.7c.1 4.6 2.2 6.5 3.9 6.9V7.8h2.6v3.9c1.7-.2 3.4-2.1 4-3.9h2.6c-.4 2.2-2.1 4.1-3.3 4.8 1.2.6 3.1 2.2 3.8 5.3h-2.9c-.6-1.9-2.2-3.4-4.2-3.6v3.6h-.2z"/></svg>
+        </span>
+        <span class="label">ВКонтакте<small>Сообщество магазина</small></span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-btn" href="https://web.telegram.org/k/#@sputnik_corp" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.4.5.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.4-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.4-.5-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.4.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.5 9.9 2.5 10.3 2.5 12s0 2.1.1 3.4c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.3.1-1.7.1-3.4s0-2.1-.1-3.4c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.3-.1-1.7-.1-4.8-.1zm0 3.1a4.9 4.9 0 100 9.8 4.9 4.9 0 000-9.8zm0 8.1a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm6.2-8.3a1.1 1.1 0 11-2.3 0 1.1 1.1 0 012.3 0z"/></svg>
+        </span>
+        <span class="label">Instagram<small>Фото и новинки</small></span>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Спутник. Все права защищены.</div>
+    </footer>
+
+  </main>
+
+  <!-- Подключаем внешний JS -->
+  <script src="script.js"></script>
+</body>
+</html>
